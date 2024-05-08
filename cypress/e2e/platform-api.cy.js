@@ -6,7 +6,7 @@ let token;
 const getUniqueId = () => { return Cypress._.uniqueId(Date.now().toString()); };
 const email = `${getUniqueId()}@test.com`;
 
-describe('Authentication - ok to fail if you are on lab5', () => {
+describe('Platform-API WITH Authentication - ok to fail if you are on lab5 - use it.skip to skip these', () => {
   it('user signs up with email and password', () => {
     cy.request(
       'POST',
